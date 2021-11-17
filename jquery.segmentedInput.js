@@ -24,7 +24,7 @@ $.fn.segmentedInput = function(settingsOverrides){
             
             // hide original field
     
-                // $(sourceField).blur().hide();
+                $(sourceField).blur().hide();
                 
             // build new segmented input
             
