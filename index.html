@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>Segmented Input</title>
+    <style type="text/css">
+        
+        body {
+            padding: 100px;
+            max-width: 700px;
+            margin: 0 auto;
+            text-align: center;
+            background: #f0f0f0
+        }
+        
+        .segmentedInput-parent input[type="text"] {
+            width: 28px;
+            text-align: center;
+            margin: 0 5px;
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <form>
+        <input type="text" class="pin" maxlength="5" autofocus /><br />
+        <input type="submit" />
+    </form>
+    
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="jquery.segmentedInput.js"></script>
+    <script type="text/javascript">
+        
+        $(document).ready(function(){
+            $('.pin').segmentedInput({
+                // options
+                autoSubmit: true
+            });
+        });
+        
+    </script>
+    
+</body>
+</html>
