@@ -1,3 +1,8 @@
+/*
+
+	By @mrjeremyblaze - https://github.com/jeremyblaze/Segmented-Field
+
+*/
 (function($){
 $.fn.segmentedInput = function(settingsOverrides){
 
