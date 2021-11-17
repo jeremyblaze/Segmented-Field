@@ -15,7 +15,8 @@ A jQuery powered segmented input field creator. Perfect for verification codes, 
     $(document).ready(function(){
         $('.pin').segmentedInput({
             // options
-            autoSubmit: true
+            autoSubmit: true,
+            fieldClasses: ''
         });
     });
     

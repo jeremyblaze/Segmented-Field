@@ -9,7 +9,8 @@ $.fn.segmentedInput = function(settingsOverrides){
     // options
 
         var settings = $.extend({
-            autoSubmit: false
+            autoSubmit: false,
+            fieldClasses: ''
        }, settingsOverrides);
        
        var sourceField = $(this);
@@ -37,7 +38,7 @@ $.fn.segmentedInput = function(settingsOverrides){
                 
                 var i = 0;
                 while ( i < cells ) {
-                    var segmentedInput = segmentedInput + '<input type="text" maxlength="1" name="'+name+'-'+i+'" />';
+                    var segmentedInput = segmentedInput + '<input type="text" class="'+settings.fieldClasses+" maxlength="1" name="'+name+'-'+i+'" />';
                     i++;
                 }
                 
